@@ -10,17 +10,17 @@ module.exports = async function (taskArgs, hre) {
     // get remote chain id
     const remoteChainId = CHAIN_ID[taskArgs.targetNetwork]
 
-    // get ExampleOFT contract
-    const exampleOFT = await ethers.getContract("ExampleOFT")
+    // get NFTEarthOFT contract
+    const NFTEarthOFT = await ethers.getContract("NFTEarthOFT")
 
     // quote fee with default adapterParams
     let adapterParams = ethers.utils.solidityPack(["uint16", "uint256"], [1, 100000])
 
-    let fees = await exampleOFT.estimateSendFee(remoteChainId, toAddress, qty, false, adapterParams)
+    let fees = await nftearthOFT.estimateSendFee(remoteChainId, toAddress, qty, false, adapterParams)
     console.log(`fees[0] (wei): ${fees[0]} / (eth): ${ethers.utils.formatEther(fees[0])}`)
 
     tx = await (
-        await exampleOFT.sendFrom(
+        await nftearthOFT.sendFrom(
             owner.address,
             remoteChainId,
             toAddress,
@@ -33,5 +33,5 @@ module.exports = async function (taskArgs, hre) {
     ).wait()
     console.log(`✅ Message Sent [${hre.network.name}] sendTokens() to OFT @ LZ chainId[${remoteChainId}] token:[${toAddress}]`)
     console.log(` tx: ${tx.transactionHash}`)
-    console.log(`* check your address [${owner.address}] on the destination chain, in the ERC20 transaction tab!"`)
+    console.log(`* check your address [${owner.address}] on the destination chain, in the ERC20 tx tab!"`)
 }

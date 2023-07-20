@@ -1,169 +1,93 @@
 {
   "contractConfig": {
-    "name": "ExampleOFT"
+    "name": "NFTEarthOFT"
   },
   "chainConfig": {
-    "goerli": {
+    "arbitrum": {
       "useCustomAdapterParams": true,
       "remoteNetworkConfig": {
-        "bsc-testnet":  {
-          "minDstGasConfig": [100000]
+        "bsc":  {
+          "minDstGasConfig": [200000]
         },
-        "fuji":  {
-          "minDstGasConfig": [100000]
+        "avalanche":  {
+          "minDstGasConfig": [200000]
         },
-        "mumbai":  {
-          "minDstGasConfig": [100000]
+        "polygon":  {
+          "minDstGasConfig": [200000]
         },
-        "arbitrum-goerli":  {
-          "minDstGasConfig": [2000000]
-        },
-        "optimism-goerli":  {
-          "minDstGasConfig": [100000]
-        },
-        "fantom-testnet":  {
-          "minDstGasConfig": [100000]
+       "optimism":  {
+          "minDstGasConfig": [200000]
         }
       }
     },
-    "bsc-testnet": {
+    "bsc": {
       "useCustomAdapterParams": true,
       "remoteNetworkConfig": {
-        "goerli":  {
-          "minDstGasConfig": [100000]
+        "avalanche":  {
+          "minDstGasConfig": [200000]
         },
-        "fuji":  {
-          "minDstGasConfig": [100000]
+        "polygon":  {
+          "minDstGasConfig": [200000]
         },
-        "mumbai":  {
-          "minDstGasConfig": [100000]
-        },
-        "arbitrum-goerli":  {
+        "arbitrum":  {
           "minDstGasConfig": [2000000]
         },
-        "optimism-goerli":  {
-          "minDstGasConfig": [100000]
-        },
-        "fantom-testnet":  {
-          "minDstGasConfig": [100000]
+        "optimism":  {
+          "minDstGasConfig": [200000]
         }
       }
     },
-    "fuji": {
+    "avalanche": {
       "useCustomAdapterParams": true,
       "remoteNetworkConfig": {
-        "bsc-testnet":  {
-          "minDstGasConfig": [100000]
+        "bsc":  {
+          "minDstGasConfig": [200000]
         },
-        "goerli":  {
-          "minDstGasConfig": [100000]
+        "polygon":  {
+          "minDstGasConfig": [200000]
         },
-        "mumbai":  {
-          "minDstGasConfig": [100000]
-        },
-        "arbitrum-goerli":  {
+        "arbitrum":  {
           "minDstGasConfig": [2000000]
         },
-        "optimism-goerli":  {
-          "minDstGasConfig": [100000]
-        },
-        "fantom-testnet":  {
-          "minDstGasConfig": [100000]
+        "optimism":  {
+          "minDstGasConfig": [200000]
         }
       }
     },
-    "mumbai": {
+    "polygon": {
       "useCustomAdapterParams": true,
       "remoteNetworkConfig": {
-        "bsc-testnet":  {
+        "bsc":  {
           "minDstGasConfig": [100000]
         },
-        "fuji":  {
+        "avalanche":  {
           "minDstGasConfig": [100000]
         },
-        "goerli":  {
-          "minDstGasConfig": [100000]
-        },
-        "arbitrum-goerli":  {
+        "arbitrum":  {
           "minDstGasConfig": [2000000]
         },
-        "optimism-goerli":  {
-          "minDstGasConfig": [100000]
-        },
-        "fantom-testnet":  {
-          "minDstGasConfig": [100000]
+        "optimism":  {
+          "minDstGasConfig": [200000]
         }
       }
     },
-    "arbitrum-goerli": {
+    "optimism": {
       "useCustomAdapterParams": true,
       "remoteNetworkConfig": {
-        "bsc-testnet":  {
-          "minDstGasConfig": [100000]
+        "bsc":  {
+          "minDstGasConfig": [200000]
         },
-        "fuji":  {
-          "minDstGasConfig": [100000]
+        "avalanche":  {
+          "minDstGasConfig": [200000]
         },
-        "mumbai":  {
-          "minDstGasConfig": [100000]
+        "polygon":  {
+          "minDstGasConfig": [200000]
         },
-        "goerli":  {
-          "minDstGasConfig": [100000]
-        },
-        "optimism-goerli":  {
-          "minDstGasConfig": [100000]
-        },
-        "fantom-testnet":  {
-          "minDstGasConfig": [100000]
-        }
-      }
-    },
-    "optimism-goerli": {
-      "useCustomAdapterParams": true,
-      "remoteNetworkConfig": {
-        "bsc-testnet":  {
-          "minDstGasConfig": [100000]
-        },
-        "fuji":  {
-          "minDstGasConfig": [100000]
-        },
-        "mumbai":  {
-          "minDstGasConfig": [100000]
-        },
-        "arbitrum-goerli":  {
+        "arbitrum":  {
           "minDstGasConfig": [2000000]
-        },
-        "goerli":  {
-          "minDstGasConfig": [100000]
-        },
-        "fantom-testnet":  {
-          "minDstGasConfig": [100000]
         }
       }
-    },
-    "fantom-testnet": {
-      "useCustomAdapterParams": true,
-      "remoteNetworkConfig": {
-        "bsc-testnet":  {
-          "minDstGasConfig": [100000]
-        },
-        "fuji":  {
-          "minDstGasConfig": [100000]
-        },
-        "mumbai":  {
-          "minDstGasConfig": [100000]
-        },
-        "arbitrum-goerli":  {
-          "minDstGasConfig": [2000000]
-        },
-        "optimism-goerli":  {
-          "minDstGasConfig": [100000]
-        },
-        "goerli":  {
-          "minDstGasConfig": [100000]
-        }
-      }
+      
     }
   }
 }
-
